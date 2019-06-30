@@ -1,0 +1,2 @@
+1. https://jsfiddle.net/1yL34rtm/     (additon of 5 nos and if strings quit)
+2. https://jsfiddle.net/eLcm719j/     (factorial)
