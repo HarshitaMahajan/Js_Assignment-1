@@ -1,0 +1,212 @@
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: right;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 5px;
+  text-align: right;
+}
+.footer-main-div{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	backgroung: #272727;
+	padding:10px 0px;
+}
+.footer-social-icons{
+	width:100%;
+	height:	none;
+	margin:auto;
+}
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 2px;
+}
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Outside Touring</h1>
+</div>
+
+<div class="topnav">
+  <a href="#">Home</a>
+  <a href="#">About Us</a>
+  <a href="#">Contact</a>
+ <a href="#">Faq</a>
+</div>
+<div class="row">
+  <div class="column">
+<img src="singapore.jpg" alt="singapore" style="width:100%;">
+</div>
+ <div class="column">
+ <img src="thailand.jpg" alt="thailand" style="width:100%;">
+</div>
+ <div class="column">
+ <img src="kerala.jpg" alt="kerala" style="width:100%;">
+</div>
+   </div>   
+  
+  <div class="row">
+<div class="column side">
+    <h2><b>Singapore</b></h2>
+    <p>Singapore, an island city-state off southern Malaysia, is a global financial center with a tropical climate and multicultural population. Its colonial core centers on the Padang, a cricket field since the 1830s and now flanked by grand buildings such as City Hall, with its 18 Corinthian columns. In Singapore's circa-1820 Chinatown stands the red-and-gold Buddha Tooth Relic Temple, said to house one of Buddha's teeth.</p>
+  </div>
+  
+  <div class="column middle">
+    <center><h2> Outside Tourism</h2></center>
+    <p>Tourism is travel for pleasure or business; also the theory and practice of touring, the business of attracting, accommodating, and entertaining tourists, and the business of operating tours.Tourism may be international, or within the traveller's country. The World Tourism Organization defines tourism more generally, in terms which go "beyond the common perception of tourism as being limited to holiday activity only", as people "traveling to and staying in places outside their usual environment for not more than one consecutive year for leisure and not less than 24 hours, business and other purposes".
+
+Tourism can be domestic or international, and international tourism has both incoming and outgoing implications on a country's balance of payments.</p>
+    <p>Outside Tourism is a great organisation that allows people to make a tour at such a reasonable cost. It makes all your experience so better that you dont need to take tension just relax and make your holiday trip so worthable and enjoyable....!!!</p>
+  </div>
+  
+  <div class="column side">
+    <h2><b>Thailand</b></h2>
+    <p>Thailand is a Southeast Asian country. It's known for tropical beaches, opulent royal palaces, ancient ruins and ornate temples displaying figures of Buddha. In Bangkok, the capital, an ultramodern cityscape rises next to quiet canalside communities and the iconic temples of Wat Arun, Wat Pho and the Emerald Buddha Temple (Wat Phra Kaew). Nearby beach resorts include bustling Pattaya and fashionable Hua Hin.</p>
+  </div>
+</div>
+
+<div class="footer-main-div">
+
+<div class="footer-social-icons">
+<ul>
+<a href="#" target="blank"><i class="fa fa-facebook"></i></a>
+<a href="#" target="blank"><i class="fa fa-twitter"></i></a>
+<a href="#" target="blank"><i class="fa fa-linkedin"></i></a>
+<a href="#" target="blank"><i class="fa fa-instagram"></i></a>
+<a href="#" target="blank"><i class="fa fa-snapchat-ghost"></i></a>
+<a href="#" target="blank"><i class="fa fa-skype"></i></a>
+</ul>
+</div>
+
+<div class="footer">
+
+<p><right>Email: harshitamahajan07@gmail.com</right></p>
+<p><center>&copy tourism.com, Inc. all rights reserved</center></p>
+<p><left>Contact no: +91 985641212</left></p>
+
+</div>
+
+
+
+</body>
+</html>
